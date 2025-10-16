@@ -8,7 +8,7 @@ plugins {
 android {
     compileSdk 33
     defaultConfig {
-        applicationId "xcom.warof.chosen"
+        applicationId "com.dawenxi.rimethelper"
         minSdkVersion 23
         targetSdkVersion 33
         versionCode 18
@@ -81,7 +81,7 @@ android {
     greendao {
         schemaVersion 1//数据库版本号
         targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
-        daoPackage 'xcom.warof.chosen.greendao'//设置DaoMaster、DaoSession、Dao包名
+        daoPackage 'com.dawenxi.rimethelper.greendao'//设置DaoMaster、DaoSession、Dao包名
     }
 
     buildFeatures {
