@@ -23,3 +23,10 @@ jobs:
       run: chmod +x gradlew
     - name: Build Release APK
       run: ./gradlew assembleRelease  # 只构建release版本，不运行测试和lint
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: app-release
+        path: app/build/outputs/apk/release/app-release.apk
+        retention-days: 7
